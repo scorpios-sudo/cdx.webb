@@ -1,0 +1,96 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  color: #fff;
+}
+.glitch-bg {
+  background: radial-gradient(circle at center, #0ff, #00f, #000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-bg {
+  background: linear-gradient(135deg, #0f0, #0ff, #00f);
+  min-height: 100vh;
+  padding: 20px;
+}
+.register-box {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+input {
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+}
+.neon-button {
+  background: #0ff;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0ff;
+}
+.neon-border {
+  box-shadow: 0 0 20px #0ff;
+}
+.glitch-text {
+  position: relative;
+  color: white;
+  font-size: 2em;
+}
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+}
+.glitch-text::before {
+  color: #0ff;
+  animation: glitch 1s infinite linear alternate-reverse;
+}
+.glitch-text::after {
+  color: #f0f;
+  animation: glitch 1s infinite linear alternate;
+}
+@keyframes glitch {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  60% { transform: translateX(-1px); }
+  80% { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+.header {
+  text-align: center;
+  padding: 40px 0;
+}
+.glow-title {
+  font-size: 2.5em;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #00f;
+}
+.subtitle {
+  font-size: 1.2em;
+}
+.packages {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.package {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 15px;
+  text-align: center;
+}

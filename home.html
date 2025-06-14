@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDX Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: #00e0ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      text-shadow: 0 0 8px #00e0ff;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      max-width: 700px;
+      text-align: center;
+      color: #b0bec5;
+      margin-bottom: 40px;
+    }
+
+    .package-container, .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .package, .product {
+      background: rgba(15, 15, 30, 0.9);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 224, 255, 0.4);
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .package:hover, .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px #00e0ff;
+    }
+
+    .package h3, .product h3 {
+      margin-top: 0;
+      color: #00e0ff;
+    }
+
+    .package p, .product p {
+      color: #cfd8dc;
+      font-size: 0.95em;
+    }
+
+    .package button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #00e0ff;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .package button:hover {
+      background-color: #00bcd4;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to CDX</h1>
+  <div class="description">
+    Kami melayani pembuatan website profesional untuk bisnis, portfolio, UMKM, toko online, travel, dan lainnya.
+    Tersedia paket custom dengan harga mulai dari <strong>Rp500.000</strong> hingga <strong>Rp3.500.000</strong>.
+    Nikmati layanan cepat, desain modern, dan support seumur hidup.
+  </div>
+
+  <div class="package-container">
+    <div class="package">
+      <h3>Basic Package</h3>
+      <p>Simple website up to 3 pages, mobile responsive, custom design.</p>
+      <a href="basic.html"><button>select</button></a>
+      <form action="home.html"></form>
+    </div>
+    <div class="package">
+      <h3>Pro Package</h3>
+      <p>Full-featured site with animations, custom form, and admin panel.</p>
+      <a href="pro.html"><button>select</button></a>
+    </div>
+    <div class="package">
+      <h3>Ultimate Package</h3>
+      <p>Everything in Pro + SEO, support lifetime, and advanced security.</p>
+      <a href="ultimate.html"><button>select</button></a>
+    </div>
+  </div>
+
+  <h1>Contoh Produk Website</h1>
+  <div class="product-container">
+    <div class="product">
+      <img src="Travel Website.png" alt="Travel Website">
+      <h3>Travel Website</h3>
+      <p>Desain elegan & responsif untuk usaha tour & travel.</p>
+    </div>
+    <div class="product">
+      <img src="Toko Online.jpg" alt="Toko Online">
+      <h3>Toko Online</h3>
+      <p>Lengkap dengan fitur keranjang, pembayaran, dan katalog.</p>
+    </div>
+    <div class="product">
+      <img src="Portfolio.png" alt="Portfolio">
+      <h3>Portfolio</h3>
+      <p>Tampilan profesional untuk freelancer dan kreator.</p>
+    </div>
+    <div class="product">
+      <img src="Landing Page.jpg" alt="Landing Page">
+      <h3>Landing Page</h3>
+      <p>Fokus pada konversi produk atau layanan.</p>
+    </div>
+    <div class="product">
+      <img src="company.jpg" alt="Company Profile">
+      <h3>Company Profile</h3>
+      <p>Website profesional untuk menampilkan identitas perusahaan.</p>
+    </div>
+  </div>
+</body>
+</html>

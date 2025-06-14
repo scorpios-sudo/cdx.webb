@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CDX Custom SaaS Web App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      color: #0ff;
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .form-box {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 15px rgba(0,255,255,0.2);
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #0ff;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .features {
+      margin-top: 50px;
+    }
+    .feature {
+      background: #0005;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0ff2;
+    }
+  </style>
+  <script>
+    function sendRequest() {
+      const name = document.getElementById('name').value;
+      const message = document.getElementById('message').value;
+      if (name && message) {
+        alert(`Terima kasih, ${name}! Pesan Anda terkirim.`);
+      } else {
+        alert("Mohon lengkapi semua form.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>CDX SaaS Web Builder</h1>
+    <p>Solusi Cepat untuk Aplikasi Web Berbasis Cloud</p>
+  </header>
+  <div class="content">
+    <div class="form-box">
+      <h2>Request Custom SaaS Web</h2>
+      <label for="name">Nama</label>
+      <input type="text" id="name" placeholder="Nama Anda" />
+
+      <label for="message">Pesan / Kebutuhan</label>
+      <textarea id="message" rows="5" placeholder="Ceritakan apa yang dibutuhkan..."></textarea>
+
+      <button onclick="sendRequest()">Kirim Request</button>
+    </div>
+
+    <div class="features">
+      <h2>Fitur Premium:</h2>
+      <div class="feature">
+        <h3>🔐 Authentikasi & Role User</h3>
+        <p>Sistem login aman, multi-role: admin, user, customer.</p>
+      </div>
+      <div class="feature">
+        <h3>☁️ Database Cloud & API</h3>
+        <p>Integrasi database realtime dengan backend API.</p>
+      </div>
+      <div class="feature">
+        <h3>📈 Dashboard Interaktif</h3>
+        <p>Statistik user, laporan, dan analitik berbasis grafik dinamis.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CDX Ultimate Package</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #0ff;
+    }
+    .desc {
+      max-width: 600px;
+      margin: 10px auto 40px;
+      font-size: 1.1rem;
+    }
+    .package-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #0ff;
+      padding: 20px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      width: 300px;
+      transition: 0.3s ease;
+      box-shadow: 0 0 20px rgba(0,255,255,0.2);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .card h3 {
+      margin-top: 15px;
+    }
+    .card a {
+      color: #0ff;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    .cta-button {
+      margin-top: 60px;
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #0ff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #0ff;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #00e6e6;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>🌌 CDX Ultimate Package</h2>
+    <p class="desc">Solusi paling lengkap untuk bisnis skala besar atau brand premium yang butuh performa, keamanan, dan desain mutakhir mulai dari <strong>Rp7.500.000</strong>.</p>
+    <div class="package-container">
+      <div class="card">
+        <img src="img/ultimate1.jpg" alt="Custom SaaS Web App">
+        <h3>Custom SaaS Web App</h3>
+        <p>Web apps powerful dengan fitur kompleks & backend custom.</p>
+        <a href="app.html" target="_blank">Lihat Contoh</a>
+      </div>
+      <div class="card">
+        <img src="img/ultimate2.jpg" alt="Fintech or Crypto Web">
+        <h3>Fintech / Crypto Website</h3>
+        <p>Desain kredibel & interaktif untuk brand keuangan atau blockchain.</p>
+        <a href="Fintech Crypto Website.html" target="_blank">Lihat Contoh</a>
+      </div>
+      <div class="card">
+        <img src="img/ultimate3.jpg" alt="Multi-language Corporate Web">
+        <h3>Multi-language Corporate Site</h3>
+        <p>Website internasional dengan sistem multi-bahasa dan SEO global.</p>
+        <a href="Multi-language Corporate Site.html" target="_blank">Lihat Contoh</a>
+      </div>
+    </div>
+    <a href="#" class="cta-button">Pesan Sekarang</a>
+  </section>
+</body>
+</html>
